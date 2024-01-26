@@ -1,0 +1,69 @@
+body {
+  background-color: rgb(51, 51, 51);
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > .container {
+  width: 800px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+}
+main > .container .box {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 8s ease-in-out;
+}
+main > .container .box:hover {
+  transform: rotateY(-300deg);
+}
+main > .container .box > div {
+  width: 240px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  position: absolute;
+  color: rgb(255, 249, 249);
+  border-radius: 10px;
+  opacity: 0.9;
+}
+main > .container .box > div:nth-of-type(1) {
+  transform: rotateY(0deg) translateZ(250px);
+  background: #ed1c24;
+  cursor: pointer;
+}
+main > .container .box > div:nth-of-type(2) {
+  transform: rotateY(60deg) translateZ(250px);
+  background: #0072bc;
+}
+main > .container .box > div:nth-of-type(3) {
+  transform: rotateY(120deg) translateZ(250px);
+  background: #39b54a;
+}
+main > .container .box > div:nth-of-type(4) {
+  transform: rotateY(180deg) translateZ(250px);
+  background: #f26522;
+}
+main > .container .box > div:nth-of-type(5) {
+  transform: rotateY(240deg) translateZ(250px);
+  background: #630460;
+}
+main > .container .box > div:nth-of-type(6) {
+  transform: rotateY(300deg) translateZ(250px);
+  background: #8c6239;
+}/*# sourceMappingURL=master.css.map */
